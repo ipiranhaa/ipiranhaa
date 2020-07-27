@@ -1,0 +1,9 @@
+{
+  "name": "ipiranhaa",
+  "version": "1.0.0",
+  "description": "My dynamic README profile",
+  "main": "index.js",
+  "repository": "git@github.com:ipiranhaa/ipiranhaa.git",
+  "author": "ipiranhaa <tanatezp@gmail.com>",
+  "license": "MIT"
+}
