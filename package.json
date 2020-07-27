@@ -5,5 +5,13 @@
   "main": "index.js",
   "repository": "git@github.com:ipiranhaa/ipiranhaa.git",
   "author": "ipiranhaa <tanatezp@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "markdown-it": "^11.0.0",
+    "rss-parser": "^3.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "prettier": "^2.0.5"
+  }
 }
