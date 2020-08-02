@@ -30,9 +30,10 @@ const badgeHeight = '25'
     const linkedInBadge = `[<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" height=${badgeHeight}>](${linkedInUrl})`
     const mediumBadge = `[<img src="https://img.shields.io/badge/medium-%2312100E.svg?&style=for-the-badge&logo=medium&logoColor=white" height=${badgeHeight}>](${mediumUrl})`
     const thailandFlag = `<img src="https://image.flaticon.com/icons/svg/323/323281.svg" width="14"/>`
+    const bangkokIcon = `<img src="https://image.flaticon.com/icons/svg/909/909143.svg" width="20"/>`
     const footer = getFooter()
 
-    text = `👋 Hi, I'm Tanate Meaksriswan. I'm a software engineer from ${thailandFlag} <b>Bangkok, Thailand</b>.\n\n ${linkedInBadge} ${mediumBadge}\n\n# Latest Blog Posts\n${blogPosts}\n\n# Bangkok weather\n${weatherDetail}\n\n${footer}`
+    text = `👋 Hi, I'm Tanate Meaksriswan. I'm a software engineer from ${thailandFlag} <b>Bangkok, Thailand</b>.\n\n ${linkedInBadge} ${mediumBadge}\n\n## Latest Blog Posts\n${blogPosts}\n\n## ${bangkokIcon} Bangkok weather\n${weatherDetail}\n\n${footer}`
 
     const result = md.render(text)
 
@@ -60,8 +61,28 @@ async function fetchWeather() {
     const descriptions = weather.items[0].content
         .split(',')
         .map((text) => text.trim())
-    const dataSource = [title, ...descriptions]
-    return dataSource.join('\n')
+    const dataSource = [title, ...descriptions].reduce((indexing, text) => {
+        const key = text.split(':')[0].split(' ').join('_').toLowerCase()
+        const value = text.split(': ')[1]
+        indexing[key] = value
+        return indexing
+    }, {})
+
+    const minWeather = Number(
+        dataSource['minimum_temperature'].split(' ')[0].split('°')[0]
+    )
+    const maxWeather = Number(
+        dataSource['maximum_temperature'].split(' ')[0].split('°')[0]
+    )
+    const averageWeather = (minWeather + maxWeather) / 2
+    const sunrise = dataSource['sunrise'].split(' ')[0]
+    const sunset = dataSource['sunset'].split(' ')[0]
+
+    return `Currently, the weather is <b>${averageWeather}°C, ${dataSource[
+        'today'
+    ].toLowerCase()}</b>, ${
+        dataSource['humidity']
+    } humidity \nToday, the sun rises at ${sunrise} and sets at ${sunset}.`
 }
 
 function getFooter() {
