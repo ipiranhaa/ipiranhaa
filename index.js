@@ -55,34 +55,55 @@ async function fetchBlogPosts() {
     return `<ul>${result}</ul>\n<a href=${websiteUrl} target="_blank">More posts</a>`
 }
 
-async function fetchWeather() {
-    const weather = await parser.parseURL(weatherUrl)
+function genWeatherDataSouce(weather) {
     const title = weather.items[0].title.split(',')[0]
     const descriptions = weather.items[0].content
         .split(',')
         .map((text) => text.trim())
-    const dataSource = [title, ...descriptions].reduce((indexing, text) => {
+    return [title, ...descriptions].reduce((indexing, text) => {
         const key = text.split(':')[0].split(' ').join('_').toLowerCase()
         const value = text.split(': ')[1]
         indexing[key] = value
         return indexing
     }, {})
+}
 
-    const minWeather = Number(
-        dataSource['minimum_temperature'].split(' ')[0].split('°')[0]
-    )
-    const maxWeather = Number(
-        dataSource['maximum_temperature'].split(' ')[0].split('°')[0]
-    )
+function parseTemp(temp) {
+    return Number(temp.split(' ')[0].split('°')[0])
+}
+
+async function fetchWeather() {
+    const weather = await parser.parseURL(weatherUrl)
+    const dataSource = genWeatherDataSouce(weather)
+
+    console.log('dataSource', dataSource)
+
+    const weatherSummary = dataSource['today']
+        ? dataSource['today'].toLowerCase()
+        : dataSource['tonight'].toLowerCase()
+    const minTemp = dataSource['minimum_temperature']
+    const maxTemp = dataSource['maximum_temperature']
+    const sunriseTime = dataSource['sunrise']
+    const sunsetTime = dataSource['sunset']
+    const humidity = dataSource['humidity']
+
+    const minWeather = minTemp ? parseTemp(minTemp) : 0
+    const maxWeather = maxTemp ? parseTemp(maxTemp) : 0
+
     const averageWeather = (minWeather + maxWeather) / 2
-    const sunrise = dataSource['sunrise'].split(' ')[0]
-    const sunset = dataSource['sunset'].split(' ')[0]
+    const sunrise = sunriseTime ? sunriseTime.split(' ')[0] : undefined
+    const sunset = sunsetTime ? sunsetTime.split(' ')[0] : undefined
 
-    return `Currently, the weather is <b>${averageWeather}°C, ${dataSource[
-        'today'
-    ].toLowerCase()}</b>, ${
-        dataSource['humidity']
-    } humidity \nToday, the sun rises at ${sunrise} and sets at ${sunset}.`
+    let sunPhrase = ''
+    if (sunrise && sunset) {
+        sunPhrase = `Today, the sun rises at ${sunrise} and sets at ${sunset}.`
+    } else if (sunrise) {
+        sunPhrase = `Today, the sun rises at ${sunrise}.`
+    } else if (sunset) {
+        sunPhrase = `Today, the sun sets at ${sunset}.`
+    }
+
+    return `Currently, the weather is <b>${averageWeather}°C, ${weatherSummary}</b>, ${humidity} humidity \n${sunPhrase}`
 }
 
 function getFooter() {
