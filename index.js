@@ -90,7 +90,13 @@ async function fetchWeather() {
     const minWeather = minTemp ? parseTemp(minTemp) : 0
     const maxWeather = maxTemp ? parseTemp(maxTemp) : 0
 
-    const averageWeather = (minWeather + maxWeather) / 2
+    let averageWeather = minWeather
+    if (minWeather > 0 && maxWeather > 0) {
+        averageWeather = (minWeather + maxWeather) / 2
+    } else if (maxWeather > 0) {
+        averageWeather = maxWeather
+    }
+
     const sunrise = sunriseTime ? sunriseTime.split(' ')[0] : undefined
     const sunset = sunsetTime ? sunsetTime.split(' ')[0] : undefined
 
@@ -103,7 +109,7 @@ async function fetchWeather() {
         sunPhrase = `Today, the sun sets at ${sunset}.`
     }
 
-    return `Currently, the weather is <b>${averageWeather}°C, ${weatherSummary}</b>, ${humidity} humidity \n${sunPhrase}`
+    return `Currently, the weather is about <b>${averageWeather}°C, ${weatherSummary}</b>, ${humidity} humidity \n${sunPhrase}`
 }
 
 function getFooter() {
