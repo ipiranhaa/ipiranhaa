@@ -3,5 +3,5 @@
 <h2>Latest Blog Posts</h2>
 <h2><img src="https://image.flaticon.com/icons/svg/909/909143.svg" width="20"/> Bangkok weather</h2>
 <hr>
-<p align="center">This <i>README</i> is generated <b>every 3 hours</b><br>Last refresh: Monday, May 10, 1:18 AM GMT+7
+<p align="center">This <i>README</i> is generated <b>every 3 hours</b><br>Last refresh: Monday, May 10, 4:11 AM GMT+7
 <p align="center"><img src="https://github.com/ipiranhaa/ipiranhaa/workflows/README%20build/badge.svg" /></p>
