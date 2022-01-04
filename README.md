@@ -4,8 +4,8 @@
 <ul><li><a href=https://kitchenrai.com/binance-savings-review/>Binance Savings ทางเลือกใหม่ของการออมเงิน</a></li><li><a href=https://kitchenrai.com/apple-ecosystem-pricing/>อยากใช้ Apple Ecosystem ต้องเตรียมเงินไว้เท่าไร</a></li><li><a href=https://kitchenrai.com/tiktok-guide-book/>วิธีสมัครแอปฯ TikTok และการใช้งานเบื้องต้น</a></li><li><a href=https://kitchenrai.com/how-to-going-outside-safe-due-covid/>วิธีออกไปซื้อของให้ปลอดภัยในช่วง “โควิด”</a></li><li><a href=https://kitchenrai.com/yashica-electro-35-gsn-review/>รีวิว Yashica Electro 35 GSN ไลก้าคนจน ดีจริงมั้ย?</a></li></ul>
 <a href=https://www.kitchenrai.com target="_blank">More posts</a>
 <h2><img src="https://image.flaticon.com/icons/svg/909/909143.svg" width="20"/> Bangkok weather</h2>
-<p>Currently, the weather is about <b>22°C, clear sky</b>, 70% humidity<br>
-Today, the sun sets at 18:03.</p>
+<p>Currently, the weather is about <b>24°C, clear sky</b>, 76% humidity<br>
+Today, the sun sets at 18:04.</p>
 <hr>
-<p align="center">This <i>README</i> is generated <b>every 3 hours</b><br>Last refresh: Tuesday, January 4, 10:14 PM GMT+7
+<p align="center">This <i>README</i> is generated <b>every 3 hours</b><br>Last refresh: Wednesday, January 5, 1:15 AM GMT+7
 <p align="center"><img src="https://github.com/ipiranhaa/ipiranhaa/workflows/README%20build/badge.svg" /></p>
