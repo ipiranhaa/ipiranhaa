@@ -30,7 +30,7 @@ const badgeHeight = '25'
     const linkedInBadge = `[<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" height=${badgeHeight}>](${linkedInUrl})`
     const mediumBadge = `[<img src="https://img.shields.io/badge/medium-%2312100E.svg?&style=for-the-badge&logo=medium&logoColor=white" height=${badgeHeight}>](${mediumUrl})`
     const thailandFlag = `<img src="https://image.flaticon.com/icons/svg/323/323281.svg" width="14"/>`
-    const bangkokIcon = `<img src="https://image.flaticon.com/icons/svg/909/909143.svg" width="20"/>`
+    const bangkokIcon = `<img src="https://cdn-icons-png.flaticon.com/512/909/909143.png" width="20"/>`
     const footer = getFooter()
 
     text = `👋 Hi, I'm Tanate Meaksriswan. I'm a software engineer from ${thailandFlag} <b>Bangkok, Thailand</b>.\n\n ${linkedInBadge} ${mediumBadge}\n\n## Latest Blog Posts\n${blogPosts}\n\n## ${bangkokIcon} Bangkok weather\n${weatherDetail}\n\n${footer}`
