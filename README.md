@@ -5,5 +5,5 @@
 <a href=https://www.kitchenrai.com target="_blank">More posts</a>
 <h2><img src="https://cdn-icons-png.flaticon.com/512/909/909143.png" width="20"/> Bangkok weather</h2>
 <hr>
-<p align="center">This <i>README</i> is generated <b>every 3 hours</b><br>Last refresh: Thursday, January 26, 10:12 PM GMT+7
+<p align="center">This <i>README</i> is generated <b>every 3 hours</b><br>Last refresh: Friday, January 27, 1:15 AM GMT+7
 <p align="center"><img src="https://github.com/ipiranhaa/ipiranhaa/workflows/README%20build/badge.svg" /></p>
