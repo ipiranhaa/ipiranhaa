@@ -13,37 +13,9 @@ const mediumUrl = 'https://medium.com/@ipiranhaa'
 const blogPostLimit = 5
 const badgeHeight = '25'
 
-const md = mdt({
-  html: true,
-  breaks: true,
-  linkify: true,
-})
-
-;(async () => {
-  let blogPosts = ''
-  let weatherDetail = ''
-  try {
-    blogPosts = await fetchBlogPosts()
-    weatherDetail = await fetchWeather()
-  } catch (e) {
-    console.error('Fetch data failed', e)
-  }
-
-  const linkedInBadge = `[<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" height=${badgeHeight}>](${linkedInUrl})`
-  const mediumBadge = `[<img src="https://img.shields.io/badge/medium-%2312100E.svg?&style=for-the-badge&logo=medium&logoColor=white" height=${badgeHeight}>](${mediumUrl})`
-  const thailandFlag = `<img src="https://cdn-icons-png.flaticon.com/512/330/330447.png" width="14"/>`
-  const bangkokIcon = `<img src="https://cdn-icons-png.flaticon.com/512/909/909143.png" width="20"/>`
-  const footer = getFooter()
-
-  const text = `👋 Hi, I'm Tanate Meaksriswan. I'm a software engineer from ${thailandFlag} <b>Bangkok, Thailand</b>.\n\n ${linkedInBadge} ${mediumBadge}\n\n## Latest Blog Posts\n${blogPosts}\n\n## ${bangkokIcon} Bangkok weather\n${weatherDetail}\n\n${footer}`
-
-  const result = md.render(text)
-
-  fs.writeFile('README.md', result, function (err) {
-    if (err) return console.log(err)
-    console.log(`${result} > README.md`)
-  })
-})()
+const parseTemp = (temp) => {
+  return Number(temp.split(' ')[0].split('°')[0])
+}
 
 const fetchBlogPosts = async () => {
   const feed = await parser.parseURL(feedUrl)
@@ -68,10 +40,6 @@ const genWeatherDataSouce = (weather) => {
     indexing[key] = value
     return indexing
   }, {})
-}
-
-const parseTemp = (temp) => {
-  return Number(temp.split(' ')[0].split('°')[0])
 }
 
 const fetchWeather = async () => {
@@ -128,3 +96,34 @@ const getFooter = () => {
 
   return `------------\n<p align="center">This <i>README</i> is generated <b>every 3 hours</b><br>Last refresh: ${refreshDate}\n${buildStatusBadge}`
 }
+
+;(async () => {
+  let blogPosts = ''
+  let weatherDetail = ''
+  try {
+    blogPosts = await fetchBlogPosts()
+    weatherDetail = await fetchWeather()
+  } catch (e) {
+    console.error('Fetch data failed', e)
+  }
+
+  const linkedInBadge = `[<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" height=${badgeHeight}>](${linkedInUrl})`
+  const mediumBadge = `[<img src="https://img.shields.io/badge/medium-%2312100E.svg?&style=for-the-badge&logo=medium&logoColor=white" height=${badgeHeight}>](${mediumUrl})`
+  const thailandFlag = `<img src="https://cdn-icons-png.flaticon.com/512/330/330447.png" width="14"/>`
+  const bangkokIcon = `<img src="https://cdn-icons-png.flaticon.com/512/909/909143.png" width="20"/>`
+  const footer = getFooter()
+
+  const text = `👋 Hi, I'm Tanate Meaksriswan. I'm a software engineer from ${thailandFlag} <b>Bangkok, Thailand</b>.\n\n ${linkedInBadge} ${mediumBadge}\n\n## Latest Blog Posts\n${blogPosts}\n\n## ${bangkokIcon} Bangkok weather\n${weatherDetail}\n\n${footer}`
+
+  const md = mdt({
+    html: true,
+    breaks: true,
+    linkify: true,
+  })
+  const result = md.render(text)
+
+  fs.writeFile('README.md', result, function (err) {
+    if (err) return console.log(err)
+    console.log(`${result} > README.md`)
+  })
+})()
