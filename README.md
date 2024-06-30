@@ -4,8 +4,8 @@
 <ul><li><a href=https://kitchenrai.com/%e0%b8%a3%e0%b8%b5%e0%b8%a7%e0%b8%b4%e0%b8%a7%e0%b8%ab%e0%b8%99%e0%b8%b1%e0%b8%87%e0%b8%aa%e0%b8%b7%e0%b8%ad-%e0%b8%a7%e0%b8%b4%e0%b8%98%e0%b8%b5%e0%b9%80%e0%b8%9b%e0%b9%87%e0%b8%99%e0%b8%84%e0%b8%99/>[รีวิวหนังสือ] วิธีเป็นคน 1% ที่ “หาเงินเก่ง” ที่สุด</a></li><li><a href=https://kitchenrai.com/binance-savings-review/>Binance Savings ทางเลือกใหม่ของการออมเงิน</a></li><li><a href=https://kitchenrai.com/apple-ecosystem-pricing/>อยากใช้ Apple Ecosystem ต้องเตรียมเงินไว้เท่าไร</a></li><li><a href=https://kitchenrai.com/tiktok-guide-book/>วิธีสมัครแอปฯ TikTok และการใช้งานเบื้องต้น</a></li><li><a href=https://kitchenrai.com/how-to-going-outside-safe-due-covid/>วิธีออกไปซื้อของให้ปลอดภัยในช่วง “โควิด”</a></li></ul>
 <a href=https://www.kitchenrai.com target="_blank">More posts</a>
 <h2><img src="https://cdn-icons-png.flaticon.com/512/909/909143.png" width="20"/> Bangkok weather</h2>
-<p>Currently, the weather is about <b>27.5°C, thundery showers</b>, 79% humidity<br>
+<p>Currently, the weather is about <b>27.5°C, thundery showers</b>, 82% humidity<br>
 Today, the sun rises at 05:54 and sets at 18:49.</p>
 <hr>
-<p align="center">This <i>README</i> is generated <b>every 3 hours</b><br>Last refresh: Sunday 30 June at 08:03 GMT+7
+<p align="center">This <i>README</i> is generated <b>every 3 hours</b><br>Last refresh: Sunday 30 June at 10:15 GMT+7
 <p align="center"><img src="https://github.com/ipiranhaa/ipiranhaa/workflows/README%20build/badge.svg" /></p>
