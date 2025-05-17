@@ -4,8 +4,8 @@
 <ul><li><a href=https://kitchenrai.com/manifest-7/>[รีวิวหนังสือ] MANIFEST 7 ขั้นตอนสู่ทุกสิ่งที่ปรารถนา</a></li><li><a href=https://kitchenrai.com/dont-be-a-smart-person-who-cant-communicate/>[รีวิวหนังสือ] อย่าเป็นคนเก่งที่คุยไม่เป็น</a></li><li><a href=https://kitchenrai.com/atomic-habits/>[รีวิวหนังสือ] 11 ข้อคิดจาก Atomic Habits เพราะชีวิตดีได้กว่าที่เป็น</a></li><li><a href=https://kitchenrai.com/%e0%b9%83%e0%b8%8a%e0%b9%89%e0%b8%84%e0%b8%a5%e0%b8%b7%e0%b9%88%e0%b8%99%e0%b8%9e%e0%b8%a5%e0%b8%b1%e0%b8%87%e0%b8%9a%e0%b8%a7%e0%b8%81/>[รีวิวหนังสือ] 10 ข้อคิดจากหนังสือใช้คลื่นพลังบวกดึงดูดพลังสุข</a></li><li><a href=https://kitchenrai.com/%e0%b8%88%e0%b8%b4%e0%b8%95%e0%b8%a7%e0%b8%b4%e0%b8%97%e0%b8%a2%e0%b8%b2%e0%b8%aa%e0%b8%b2%e0%b8%a2%e0%b8%94%e0%b8%b2%e0%b8%a3%e0%b9%8c%e0%b8%81/>[รีวิวหนังสือ] จิตวิทยาสายดาร์ก</a></li></ul>
 <a href=https://www.kitchenrai.com target="_blank">More posts</a>
 <h2><img src="https://cdn-icons-png.flaticon.com/512/909/909143.png" width="20"/> Bangkok weather</h2>
-<p>Currently, the weather is about <b>27.5°C, thundery showers</b>, 75% humidity<br>
+<p>Currently, the weather is about <b>27°C, thundery showers</b>, 78% humidity<br>
 Today, the sun rises at 05:51 and sets at 18:38.</p>
 <hr>
-<p align="center">This <i>README</i> is generated <b>every 3 hours</b><br>Last refresh: Saturday 17 May at 13:21 GMT+7
+<p align="center">This <i>README</i> is generated <b>every 3 hours</b><br>Last refresh: Saturday 17 May at 16:15 GMT+7
 <p align="center"><img src="https://github.com/ipiranhaa/ipiranhaa/workflows/README%20build/badge.svg" /></p>
