@@ -6,8 +6,8 @@ const parser = new RSSParser()
 
 const bbcBangkokId = '1609350'
 const weatherUrl = `https://weather-broker-cdn.api.bbci.co.uk/en/forecast/rss/3day/${bbcBangkokId}`
-const feedUrl = 'https://www.kitchenrai.com/feed'
-const websiteUrl = 'https://www.kitchenrai.com'
+const feedUrl = 'https://ipiranhaa.github.io/blog/rss'
+const websiteUrl = 'https://ipiranhaa.github.io/blog'
 const linkedInUrl = 'https://www.linkedin.com/in/ipiranhaa'
 const mediumUrl = 'https://medium.com/@ipiranhaa'
 const blogPostLimit = 5
