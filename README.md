@@ -4,8 +4,8 @@
 <ul><li><a href=https://ipiranhaa.github.io/blog/accordion-by-css-grid>Accordion by CSS grid</a></li><li><a href=https://ipiranhaa.github.io/blog/10-primitive-js-validators>10 primitive Javascript validators</a></li><li><a href=https://ipiranhaa.github.io/blog/fixed-table-header>Fixed HTML table header</a></li><li><a href=https://ipiranhaa.github.io/blog/thai-date-picker>Thai Date picker</a></li></ul>
 <a href=https://ipiranhaa.github.io/blog target="_blank">More posts</a>
 <h2><img src="https://cdn-icons-png.flaticon.com/512/909/909143.png" width="20"/> Bangkok weather</h2>
-<p>Currently, the weather is about <b>25.5°C, light rain showers</b>, 82% humidity<br>
-Today, the sun rises at 06:06 and sets at 18:30.</p>
+<p>Currently, the weather is about <b>23°C, partly cloudy</b>, 89% humidity<br>
+Today, the sun sets at 18:30.</p>
 <hr>
-<p align="center">This <i>README</i> is generated <b>every 3 hours</b><br>Last refresh: Sunday 31 August at 16:14 GMT+7
+<p align="center">This <i>README</i> is generated <b>every 3 hours</b><br>Last refresh: Sunday 31 August at 19:30 GMT+7
 <p align="center"><img src="https://github.com/ipiranhaa/ipiranhaa/workflows/README%20build/badge.svg" /></p>
